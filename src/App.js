@@ -4,11 +4,9 @@ import { useEffect, useState } from 'react';
 import SearchIcon from './search.svg';
 import MovieCard from './MovieCard';
 
-// API KEY
-//  99ed5a5
 
-const API_URL = 'http://www.omdbapi.com?apikey=99ed5a5';
-// const API_URL = "http://www.omdbapi.com?apikey=b6003d8a";
+
+const API_URL = `http://www.omdbapi.com?apikey=${process.env.REACT_APP_OMB_API_KEY}`;
 
 const movie1 = {
   "Title": "Italian Spiderman",
